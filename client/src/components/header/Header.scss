@@ -1,0 +1,33 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.header {
+    &__container {
+        background-image: url('../../assets/images/header-img.jpg');
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    &__wrapper {
+        position: relative;
+        min-height: 100vh;
+        margin: 0 auto;        
+    }
+    &__text {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 25vh;
+        @include tablet {
+            height: 30vh;
+            text-align: left;
+            right: 30px;
+        }
+    }
+    &__heading {
+        margin: 0;
+    }
+}
