@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Homepage from './pages/homepage/Homepage';
+import './App.scss';
 
 const App = () => {
   return (
-    <div>Hello</div>
+    <Router>
+      <Routes>
+        <Route exact path='/' element={<Homepage/>}/>
+      </Routes>
+    </Router>
   )
 }
 
-export default App
+export default App;
