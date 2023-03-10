@@ -1,5 +1,5 @@
 $white: hsla(0, 0%, 100% , 1);
-
+$transparent: hsla(0, 0%, 0% , 0);
 $light_mint: hsla(171, 57%, 73% , 1);
 $dark_mint: hsla(171, 90%, 41% , 1);
 
@@ -7,7 +7,7 @@ $light_blue: hsla(206, 57%, 58% , 1);
 $dark_blue: hsla(207, 53%, 34% , 0.7);
 
 $light_purple: rgba(176, 146, 206, 0.978);
-$dark_purple: rgb(75, 18, 149);
+$dark_purple: #551A8B;
 
 $light_grey: hsla(0, 0%, 83% , 1);
 $dark_grey: hsla(0, 0%, 66% , 1);

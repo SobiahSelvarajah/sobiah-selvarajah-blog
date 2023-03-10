@@ -1,0 +1,35 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+
+.navbar {
+    &__container {
+        position: fixed;
+        width: 100%;
+        top: 24px;
+        background-color: $transparent;
+        backdrop-filter: blur(20px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 300;
+        color: $dark_purple;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: $h3_text_size_m;
+        line-height: $h3_line_height_m;
+        @include tablet {
+            font-size: $h3_text_size_dt;
+            line-height: $h3_line_height_dt;
+        }
+    }
+    &__logo {
+        margin-left: 30px;
+    }
+    &__list {
+        margin-right: 30px;
+        display: flex;
+        padding: 0;
+        gap: 50px;
+    }
+}
